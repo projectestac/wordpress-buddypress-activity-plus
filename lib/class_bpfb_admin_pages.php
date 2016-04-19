@@ -27,6 +27,14 @@ class Bpfb_Admin {
 			? 'settings.php'
 			: 'options-general.php'
 		;
+
+        // XTEC ************ AFEGIT - Moved submenu to custom location. Couldn't get this done using hooks :-(
+        // 2016.04.19 @aginard
+
+        $hook = 'xtec-bp-options';
+
+        //************ FI
+
 		$this->_page_hook = add_submenu_page(
 			$hook,
 			__('BuddyPress Activity Plus', 'bpfb'),
